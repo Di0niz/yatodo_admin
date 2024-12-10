@@ -84,6 +84,7 @@ DATABASES = {
         "PASSWORD": os.environ.get("DATABASE_PASSWORD") or "test",
         "HOST": os.environ.get("DATABASE_HOST") or "localhost",
         "PORT": int(os.environ.get("DATABASE_PORT") or 6432),
+        "OPTIONS": {"sslmode": "require"},
     }
 }
 
